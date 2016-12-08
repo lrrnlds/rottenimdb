@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  body: MyString
+  rating: 1
+  vote: 1
+  movie_id: 1
+  user_id: 1
+
+two:
+  title: MyString
+  body: MyString
+  rating: 1
+  vote: 1
+  movie_id: 1
+  user_id: 1
