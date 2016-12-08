@@ -28,5 +28,3 @@ Comment.create(title: 'not ok', body: 'very bad review i dont agree', vote_count
 Comment.create(title: 'i think...', body:'you probably shouldnt see this movie', vote_count: 2, user_id: 4,commentable_type: "Movie", commentable_id: 3)
 
 
-
-
