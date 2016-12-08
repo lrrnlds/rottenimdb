@@ -19,40 +19,9 @@ Comment.create(title: 'not ok', body: 'very bad review i dont agree', vote_count
 Comment.create(title: 'i think...', body:'you probably shouldnt see this movie', vote_count: 2, user_id: 4,commentable_type: "Movie", commentable_id: 3)
 
 i = Imdb::Search.new("The Shawshank Redemption")
-Movie.create(
-   title:  movie.title.scan(/\w+/).join(" "),
-   year:  movie.year,
-   synopsis:  movie.plot_synopsis,
-   genre:  movie.genres[0],
-   )
-end
-i.movies[0].title
-i.movies[0].year
-i.movies[0].genres[0]
-i.movies[0].plot_synopsis
+
 
 i = Imdb::Search.new("The Godfather")
-Movie.create(
-   title:  movie.title.scan(/\w+/).join(" "),
-   year:  movie.year,
-   synopsis:  movie.plot_synopsis,
-   genre:  movie.genres[0],
-   )
-end
-i.movies[0].title
-i.movies[0].year
-i.movies[0].genres[0]
-i.movies[0].plot_synopsis
+
 
 i = Imdb::Search.new("The Dark Knight")
-Movie.create(
-   title:  movie.title.scan(/\w+/).join(" "),
-   year:  movie.year,
-   synopsis:  movie.plot_synopsis,
-   genre:  movie.genres[0],
-   )
-end
-i.movies[0].title
-i.movies[0].year
-i.movies[0].genres[0]
-i.movies[0].plot_synopsis
