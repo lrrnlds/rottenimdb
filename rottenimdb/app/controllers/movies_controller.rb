@@ -2,10 +2,12 @@ class MoviesController < ApplicationController
 
   def index
     @movies = Movie.all
+    # p "hello"
   end
 
   def new
     @movie = Movie.new
+    # p "hello"
   end
 
   def create
@@ -23,6 +25,12 @@ class MoviesController < ApplicationController
 
   def show
     @movie = Movie.find(params[:id])
+    # p "hello"
   end
+
+  private
+    def movie_params
+      params.require(:movie).permit(:title, :genre, :year, :synopsis, :poster)
+    end
 
 end
