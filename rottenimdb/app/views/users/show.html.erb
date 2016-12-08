@@ -1,0 +1,11 @@
+<h1> Welcome <%=@user.username%> </h1>
+
+<% if @user.trusted %>
+<h4>Here are your reviews</h4>
+  <%= @user.reviews%>
+<h4>Here are your comments</h4>
+  <%= @user.comments%>
+  <%else%>
+<h4>Here are your comments</h4>
+  <%= @user.comments%>
+<%end%>
