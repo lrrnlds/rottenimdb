@@ -4,6 +4,23 @@ class MoviesController < ApplicationController
     @movies = Movie.all
   end
 
+  def new
+    @movie = Movie.new
+  end
+
+  def create
+    if @movie.exists?
+      render 'show'
+    else
+      @movie = Movie.new(movie_params)
+      if @movie.save
+        redirect_to @movie
+      else
+        redirect_to root_path
+      end
+    end
+  end
+
   def show
     @movie = Movie.find(params[:id])
   end
