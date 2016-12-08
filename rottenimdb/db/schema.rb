@@ -38,7 +38,6 @@ ActiveRecord::Schema.define(version: 20161208201323) do
     t.string   "genre"
     t.integer  "year"
     t.text     "synopsis"
-    t.string   "poster"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
