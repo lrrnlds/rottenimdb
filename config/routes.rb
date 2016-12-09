@@ -15,4 +15,8 @@ Rails.application.routes.draw do
 
   resources :reviews, only: [:create, :update, :new, :edit, :destroy]
 
+
+  resources :comments, only: [:create, :update, :new, :edit, :destroy]
+
+
 end
