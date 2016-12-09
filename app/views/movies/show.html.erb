@@ -16,6 +16,11 @@
   Review: <%= review.body  %> <br>
   Rating: <%= review.rating  %> <br>
   Vote Count: <%= review.vote_count %> <br>
+  <div class="vote">Vote Count: <%= review.vote_count %> </div><br>
+    <form class="upvote" action="/reviews/<%= review.id %>/upvote" method="POST">
+      <input type="hidden" name="_method" value="PUT">
+      <input type="submit" class="upvote_button" value="👍 Upvote!">
+    </form>
   </p>
   <% end %>
   </div>
