@@ -1,0 +1,8 @@
+<h1>Movie Genres</h1>
+
+<% @genres.each do |genre|%>
+  <%= link_to genre.name, genre_path%>
+  <% genre.movies.each do |movie|%>
+    <%= link_to movie.title, movie_path%>
+  <%end%>
+<%end%>
