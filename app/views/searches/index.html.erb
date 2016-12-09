@@ -1,0 +1,13 @@
+<div class="container-fluid padding-20-top max-w-1000">
+  <% @movies.each do |movie| %>
+    <div class="row">
+      <div class="col-sm-4 text-centered"><%= link_to image_tag(movie.poster, class: "img-responsive"), movie_path(movie) %></div>
+      <div class="col-sm-6 ">
+        <h1>Title:  <%= movie.title  %> </h1>
+        <p>Genre :  <%= movie.genre  %> </p>
+        <p>Year:  <%= movie.year  %> </p>
+      </div>
+    </div>
+    <br>
+  <% end %>
+</div>
