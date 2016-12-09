@@ -83,11 +83,11 @@
    color: black;
  }
 .tomatoes-background {
-  background-image: url(tomatoes.jpg);
+  background-image: image-url("tomatoes.jpg");
   background-size: cover;
 }
 .pattern-background {
-  background-image: url(pattern.jpg);
+  background-image: image-url("pattern.jpg");
   background-size: cover;
 }
 
