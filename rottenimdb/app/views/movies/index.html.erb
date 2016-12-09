@@ -1,3 +1,6 @@
-<% @movies.each do |movie| %>
-<p> <%=  link_to image_tag(movie.poster), movie_path(movie)%> </p>
-<% end %>
+<%= render "layouts/logo" %>
+<div class="container-fluid">
+  <% @movies.each do |movie| %>
+    <div class="col-sm-4 padding-top-5 padding-bot-5"> <%=  link_to image_tag(movie.poster, class: "img-responsive"), movie_path(movie)%> </div>
+  <% end %>
+</div>
