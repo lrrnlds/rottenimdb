@@ -16,6 +16,12 @@
  .padding-15 {
    padding: 15px;
  }
+ .padding-top-5 {
+   padding-top: 5px;
+ }
+ .padding-bot-5 {
+   padding-bottom: 5px;
+ }
 
  .padding-12-15 {
    padding: 12px 15px;
@@ -23,6 +29,14 @@
 
  .padding-12-20 {
    padding: 12px 20px;
+ }
+
+ .padding-20-top {
+   padding-top: 20px;
+ }
+
+ .padding-20-bot {
+   padding-bottom: 20px;
  }
 
  .margin-0 {
@@ -33,6 +47,18 @@
 
  .no-border {
    border: none;
+ }
+
+ .grey-1-right {
+   border-right: 1px solid grey;
+ }
+
+ .grey-1-left {
+   border-left: 1px solid grey;
+ }
+
+ .lg-1-all {
+   border: 1px solid #d3d3d3;
  }
 
  /* Cursor CSS */
@@ -56,6 +82,23 @@
  .color-black {
    color: black;
  }
+.tomatoes-background {
+  background-image: url(tomatoes.jpg);
+  background-size: cover;
+}
+.pattern-background {
+  background-image: url(pattern.jpg);
+  background-size: cover;
+}
+
+.flip-y {
+  transform:scaleX(-1);
+}
+
+
+ .FF-background {
+   background-color: #FFCCB8;
+ }
 
  .F8-background {
    background-color: #F8F8F8;
@@ -63,6 +106,17 @@
 
  .CC-background {
    background-color: #CCF6AE;
+ }
+ .background-white {
+   background-color: white;
+ }
+
+ .background-777 {
+   background-color: #777;
+ }
+
+ .no-background {
+   background-color: transparent;
  }
 
  .color-777 {
@@ -93,6 +147,10 @@
   display: none;
 }
 
+.no-float {
+  float: none;
+}
+
 /* Width CSS */
 
 .min-w-160 {
@@ -103,6 +161,14 @@
   min-width: 250px;
 }
 
+.max-w-1000 {
+  max-width: 1000px;
+}
+
+.min-h-50 {
+  min-height: 50px
+}
+
 /* Z-index */
 
 .z-2 {
@@ -111,17 +177,37 @@
 
 /* Misc. */
 
- /* Dropdown button on hover & focus */
- .dropbtn:hover, .dropbtn:focus {
-     color: black;
- }
+.img-responsive {
+    margin: 0 auto;
+}
+
+.vcenter {
+  vertical-align: middle;
+}
+
+@media (max-width: 767px) {
+    .navbar-default{
+        display:none;
+    }
+}
+
+@media (min-width: 768px) {
+    .navbar-mobile{
+        display:none;
+    }
+}
+
+
+.transparent-green{
+  background:rgba(6,41,11,0.5);
+}
+
+.navbar-default .navbar-nav>li>a {
+  color: black;
+}
 
  /* Change color of dropdown links on hover */
  .dropdown-content a:hover {background-color: #f1f1f1}
 
  /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
  .show {display:block;}
-
- .navbar-default {
-    background-color: #CCF6AE;
-}
