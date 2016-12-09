@@ -8,13 +8,15 @@ Rails.application.routes.draw do
   get '/login' => 'sessions#new'
   post '/login' => 'sessions#create'
   get '/logout' => 'sessions#destroy'
-
   get '/signup' => 'users#new'
-  post '/users' => 'users#create'
 
-  get '/users/:id' => 'users#show'
-
-
+  resources :users, only: [:show, :create]
   resources :genres
+
+  resources :reviews, only: [:create, :update, :new, :edit, :destroy]
+
+
+  resources :comments, only: [:create, :update, :new, :edit, :destroy]
+
 
 end
