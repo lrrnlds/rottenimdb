@@ -1,11 +1,14 @@
-<h1>Signup!</h1>
+<div class="container-fluid">
+  <div class="col-sm-6 col-sm-offset-3 text-center">
+  <h1>Signup:</h1>
+  <%= form_for :user, url: '/users' do |f| %>
 
-<%= form_for :user, url: '/users' do |f| %>
+    <p>Name: <%= f.text_field :name %><p>
+    <p>Email: <%= f.text_field :email %></p>
+    <p>Password: <%= f.password_field :password %></p>
+    <p>Password Confirmation: <%= f.password_field :password_confirmation %></p>
+    <%= f.submit "Submit" %>
 
-  Name: <%= f.text_field :name %>
-  Email: <%= f.text_field :email %>
-  Password: <%= f.password_field :password %>
-  Password Confirmation: <%= f.password_field :password_confirmation %>
-  <%= f.submit "Submit" %>
-
-<% end %>
+  <% end %>
+  </div>
+</div>

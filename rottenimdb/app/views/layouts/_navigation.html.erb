@@ -16,7 +16,7 @@
     <% end %>
     <div class="dropdown pos-relative inline-block nav navbar-nav navbar-right">
       <button onclick="showFunction()" class="dropbtn padding-15 no-border pointer-cursor color-black no-background">Genres</button>
-      <div id="myDropdown" class="dropdown-content no-display pos-absolute CC-background min-w-160 z-2">
+      <div id="myDropdown" class="dropdown-content no-display pos-absolute min-w-160 z-2 lg-1-all">
         <input class="font-s-16 padding-12-20 no-border" type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
         <% Genre.all.each do |genre| %>
         <a class="color-black padding-12-15 no-text-dec block" href="/genres/<%= genre.id %>"><%= genre.name %></a>
