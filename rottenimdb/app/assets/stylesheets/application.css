@@ -49,6 +49,14 @@
    border: none;
  }
 
+ .grey-1-right {
+   border-right: 1px solid grey;
+ }
+
+ .grey-1-left {
+   border-left: 1px solid grey;
+ }
+
  /* Cursor CSS */
 
  .pointer-cursor {
@@ -70,6 +78,20 @@
  .color-black {
    color: black;
  }
+.tomatoes-background {
+  background-image: url(tomatoes.jpg);
+  background-size: cover;
+}
+.pattern-background {
+  background-image: url(pattern.jpg);
+  background-size: cover;
+}
+
+.flip-y {
+  transform:scaleX(-1);
+}
+
+
  .FF-background {
    background-color: #FFCCB8;
  }
@@ -87,6 +109,10 @@
 
  .background-777 {
    background-color: #777;
+ }
+
+ .no-background {
+   background-color: transparent;
  }
 
  .color-777 {
@@ -135,6 +161,10 @@
   max-width: 1000px;
 }
 
+.min-h-50 {
+  min-height: 50px
+}
+
 /* Z-index */
 
 .z-2 {
@@ -163,20 +193,16 @@
     }
 }
 
+.transparent-green{
+  background:rgba(6,41,11,0.5);
+}
 
- /* Dropdown button on hover & focus */
- .dropbtn:hover, .dropbtn:focus {
-     color: black;
- }
+.navbar-default .navbar-nav>li>a {
+  color: black;
+}
 
  /* Change color of dropdown links on hover */
  .dropdown-content a:hover {background-color: #f1f1f1}
 
  /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
  .show {display:block;}
-
- /* Adjust Bootstrap Defaults */
-
- .navbar-default {
-    background-color: #CCF6AE;
-}

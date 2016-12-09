@@ -1,6 +1,7 @@
 <%= render "layouts/logo" %>
-<div class="container-fluid">
+<div class="container-fluid text-center">
+  <h2 class="margin-0 padding-bot-5">Our Latest Releases:</h2>
   <% @movies.each do |movie| %>
-    <div class="col-sm-4 padding-top-5 padding-bot-5"> <%=  link_to image_tag(movie.poster, class: "img-responsive"), movie_path(movie)%> </div>
+    <div class="col-sm-4 padding-top-5 padding-bot-5 grey-1-right grey-1-left"> <%=  link_to image_tag(movie.poster, class: "img-responsive"), movie_path(movie)%> </div>
   <% end %>
 </div>

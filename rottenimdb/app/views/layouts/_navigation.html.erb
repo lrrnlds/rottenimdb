@@ -1,4 +1,4 @@
-<nav class="navbar navbar-default margin-0 ">
+<nav class="navbar navbar-default margin-0 pattern-background">
   <div class="container-fluid">
     <ul class="nav navbar-nav navbar-left">
       <li><%= link_to 'Home', '/' %></li>
@@ -12,10 +12,10 @@
     </ul>
     <%= form_tag("/search", method: "get", class: "nav navbar-nav navbar-right") do %>
       <%= text_field(:search, :title, placeholder: 'Search for Movie', class: 'padding-15 no-border min-w-250' ) %>
-      <%= submit_tag("Search", class: "padding-15 no-border color-777 CC-background") %>
+      <%= submit_tag("Search", class: "padding-15 no-border color-black no-background") %>
     <% end %>
     <div class="dropdown pos-relative inline-block nav navbar-nav navbar-right">
-      <button onclick="showFunction()" class="dropbtn padding-15 no-border pointer-cursor color-777 CC-background">Genres</button>
+      <button onclick="showFunction()" class="dropbtn padding-15 no-border pointer-cursor color-black no-background">Genres</button>
       <div id="myDropdown" class="dropdown-content no-display pos-absolute CC-background min-w-160 z-2">
         <input class="font-s-16 padding-12-20 no-border" type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
         <% Genre.all.each do |genre| %>
@@ -25,13 +25,13 @@
     </div>
   </div>
 </nav>
-<nav class= "navbar navbar-mobile margin-0 padding-20-bot CC-background">
+<nav class= "navbar navbar-mobile margin-0 padding-20-bot pattern-background">
   <div class="container-fluid">
     <div class="col-xs-4 col-xs-offset-2 padding-20-top padding-20-bot text-center">
-      <%= link_to 'Home', '/', { :class=>"no-text-dec color-black" } %>
+      <%= link_to 'Home', '/', { :class=>"no-text-dec color-black no-background" } %>
     </div>
     <div class="col-xs-4 padding-20-top padding-20-bot text-center">
-      <%= link_to 'Genres', '/genres', { :class=>"no-text-dec color-black" } %>
+      <%= link_to 'Genres', '/genres', { :class=>"no-text-dec color-black no-background" } %>
     </div>
     <div class="col-xs-12 text-center">
     <%= form_tag("/search", method: "get") do %>
