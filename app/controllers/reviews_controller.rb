@@ -4,15 +4,15 @@ class ReviewsController < ApplicationController
  end
 
  def create
-   review = Review.new(review_params)
-     review.vote_count = 0
-     review.user_id = 1
-   if review.save
-     redirect_back(fallback_location: root_path)
-   else
-     redirect_back(fallback_location: root_path)
-   end
- end
+    review = Review.new(review_params)
+      review.vote_count = 0
+      review.user_id = session[:user_id]
+    if review.save
+      redirect_back(fallback_location: root_path)
+    else
+      redirect_back(fallback_location: root_path)
+    end
+  end
 
  def edit
    @review = Review.find(params[:id])
