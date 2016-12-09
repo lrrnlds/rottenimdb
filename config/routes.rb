@@ -13,6 +13,6 @@ Rails.application.routes.draw do
   resources :users, only: [:show, :create]
   resources :genres
 
-  resources :reviews, only: [:create, :updstr:new, :edit, :destroy]
+  resources :reviews, only: [:create, :update, :new, :edit, :destroy]
 
 end
