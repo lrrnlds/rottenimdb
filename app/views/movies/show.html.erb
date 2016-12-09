@@ -1,24 +1,27 @@
-<div><%= image_tag @movie.poster %>
-
-Title: <h1> <%= @movie.title  %> </h1>
-Genre : <p> <%= @movie.genre  %> </p>
-Year: <p> <%= @movie.year  %> </p>
-Synopsis <p> <%= @movie.synopsis  %> </p>
-</div>
-
-<div>
-<h2> Trusted Reviews </h2>
-<% @movie.reviews.each do |review| %>
-<p>
+<div class="container-fluid padding-20-top max-w-1000">
+  <div class="row">
+    <div class="col-sm-4 text-centered"><%= image_tag(@movie.poster, class: "img-responsive") %></div>
+    <div class="col-sm-6 ">
+      <h1>Title:  <%= @movie.title  %> </h1>
+      <p>Genre :  <%= @movie.genre  %> </p>
+      <p>Year:  <%= @movie.year  %> </p>
+      <p>Synopsis  <%= @movie.synopsis  %> </p>
+    </div>
+  </div>
+  <div class="col-sm-4 col-sm-offset-4">
+  <h2> Trusted Reviews </h2>
+  <% @movie.reviews.each do |review| %>
+  <p>
   Title: <%= review.title  %><br>
   Review: <%= review.body  %> <br>
   Rating: <%= review.rating  %> <br>
   Vote Count: <%= review.vote_count %> <br>
-    <div class="vote">Vote Count: <%= review.vote_count %> </div><br>
-      <form class="upvote" action="/reviews/<%= review.id %>/upvote" method="POST">
-        <input type="hidden" name="_method" value="PUT">
-        <input type="submit" class="upvote_button" value="👍 Upvote!">
-      </form>
-    </p>
-    <% end %>
+  <div class="vote">Vote Count: <%= review.vote_count %> </div><br>
+    <form class="upvote" action="/reviews/<%= review.id %>/upvote" method="POST">
+      <input type="hidden" name="_method" value="PUT">
+      <input type="submit" class="upvote_button" value="👍 Upvote!">
+    </form>
+  </p>
+  <% end %>
+  </div>
 </div>
