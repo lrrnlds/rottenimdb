@@ -22,8 +22,14 @@
       <input type="submit" class="upvote_button" value="👍 Upvote!">
     </form>
   </p>
+  <% if current_user %>
+    <%= link_to "Add a Comment!", new_comment_path %>
+  <% end %>
+  
   <% end %>
   </div>
+
+  
 
   <% if current_user %>
     <h3>Leave A review: </h3>
