@@ -17,6 +17,12 @@ Movie.create(title: god_father.title, genre: god_father.genre, year: god_father.
 # # Movie.create(title:'The Godfather', genre: "mob", year: '1942', synopsis:"a really good movie about stuff")
 # # Movie.create(title:'The Dark Knight', genre: "action", year: '1942', synopsis:"a really good movie about stuff")
 
+Genre.create(name: "Horror")
+Genre.create(name: "Adventure")
+Genre.create(name: "Drama")
+Genre.create(name: "Fantasy")
+Genre.create(name: "Fiction")
+
 # Review.create(title:'Good Movie', body: 'This movie was so sos so oo soo good', vote_count: 3, movie_id: 1, user_id: 1 )
 # Review.create(title:'Bad movie', body: 'This movie was so sos so oo soo bad', vote_count: 0, movie_id: 3, user_id: 1 )
 # Review.create(title:'Meh', body: 'This movie was alright', vote_count: 7, movie_id: 2, user_id: 1 )
