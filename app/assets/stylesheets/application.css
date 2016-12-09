@@ -13,3 +13,115 @@
  *= require_tree .
  *= require_self
  */
+ .padding-15 {
+   padding: 15px;
+ }
+
+ .padding-12-15 {
+   padding: 12px 15px;
+ }
+
+ .padding-12-20 {
+   padding: 12px 20px;
+ }
+
+ .margin-0 {
+   margin: 0px;
+ }
+
+ /* Border CSS */
+
+ .no-border {
+   border: none;
+ }
+
+ /* Cursor CSS */
+
+ .pointer-cursor {
+   cursor: pointer;
+ }
+
+ /* Text CSS */
+
+ .no-text-dec {
+   text-decoration: none;
+ }
+
+ .font-s-16 {
+   font-size: 16px;
+ }
+
+ /* Color CSS */
+
+ .color-black {
+   color: black;
+ }
+
+ .F8-background {
+   background-color: #F8F8F8;
+ }
+
+ .CC-background {
+   background-color: #CCF6AE;
+ }
+
+ .color-777 {
+   color: #777;
+ }
+
+ /* Positioning CSS */
+
+.pos-relative {
+  position: relative;
+}
+
+.pos-absolute {
+  position: absolute;
+}
+
+/* Display CSS */
+
+.block {
+  display: block;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.no-display {
+  display: none;
+}
+
+/* Width CSS */
+
+.min-w-160 {
+  min-width: 160px;
+}
+
+.min-w-250 {
+  min-width: 250px;
+}
+
+/* Z-index */
+
+.z-2 {
+  z-index: 2;
+}
+
+/* Misc. */
+
+ /* Dropdown button on hover & focus */
+ .dropbtn:hover, .dropbtn:focus {
+     color: black;
+ }
+
+ /* Change color of dropdown links on hover */
+ .dropdown-content a:hover {background-color: #f1f1f1}
+
+ /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+ .show {display:block;}
+
+ .navbar-default {
+    background-color: #CCF6AE;
+}
