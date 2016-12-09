@@ -1,10 +1,12 @@
-<div><%= image_tag @movie.poster %> </div>
+<div><%= image_tag @movie.poster %>
 
 Title: <h1> <%= @movie.title  %> </h1>
 Genre : <p> <%= @movie.genre  %> </p>
 Year: <p> <%= @movie.year  %> </p>
 Synopsis <p> <%= @movie.synopsis  %> </p>
+</div>
 
+<div>
 <h2> Trusted Reviews </h2>
 <% @movie.reviews.each do |review| %>
 <p>
@@ -14,6 +16,7 @@ Rating: <%= review.rating  %> <br>
 Vote Count: <%= review.vote_count %> <br>
 </p>
 <% end %>
+</div>
 
 
 

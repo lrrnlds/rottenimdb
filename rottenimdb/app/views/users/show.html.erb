@@ -1,11 +1,31 @@
-<h1> Welcome <%=@user.username%> </h1>
-
+<h1> Welcome <%=@user.name%> </h1>
+<div>
 <% if @user.trusted %>
-<h4>Here are your reviews</h4>
-  <%= @user.reviews%>
-<h4>Here are your comments</h4>
-  <%= @user.comments%>
+<h2>Here are your reviews</h2>
+
+  <% @user.reviews.each do |review|%>
+ <h4> <%= review.movie.title  %> </h5>
+   <p>Review: <%=  review.body %></p>
+  <p><% review.comments.each do |comment| %></p>
+  <p> Comment: <%= comment.body %> </p>
+  <% end %>
+  <% end %>
+</div>
+
+<div>
+  <h2>Here are your comments</h2>
+  <% @user.comments.each do |comment|%>
+  <p><%=  comment.body %></p>
+  <% end %>
+  </div>
+
   <%else%>
-<h4>Here are your comments</h4>
-  <%= @user.comments%>
-<%end%>
+
+<div>
+  <h4>Here are your comments</h4>
+  <%  %>
+    <p><% @user.comments.each do |comment|%> </p>
+      <%= comment.body %>
+    <% end %>
+  <%end%>
+</div>

@@ -1,25 +1,11 @@
+<h1>Signup!</h1>
 
-<div>
-<div>
-<%= form_for @user do |f| %>
-  <% if @errors %>
-  <ul>
-  <% @errors.full_messages.each do |error|%>
-    <li><%= error %></li>
-  <% end %>
-  </ul>
-  <%end%>
-</div>
+<%= form_for :user, url: '/users' do |f| %>
 
-<p>
-<%= f.text_field :username, placeholder: 'username' %>
-<%= f.text_field :first_name, placeholder: 'first name' %>
-<%= f.text_field :email, placeholder: 'Email Address'%>
-<%= f.password_field :password, placeholder: 'Password'%>
-<%= f.password_field :password_confirmation, placeholder: 'Confirm Password'%>
-<%= f.submit "Submit"%>
- <%end%>
-</p>
+  Name: <%= f.text_field :name %>
+  Email: <%= f.text_field :email %>
+  Password: <%= f.password_field :password %>
+  Password Confirmation: <%= f.password_field :password_confirmation %>
+  <%= f.submit "Submit" %>
 
-
-</div>
+<% end %>
