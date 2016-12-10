@@ -3,7 +3,7 @@
     <ul class="nav navbar-nav navbar-left">
       <li><%= link_to 'Home', '/' %></li>
       <% if current_user %>
-        <li><%= current_user.name %></li>
+        <li><%= link_to current_user.name, user_path(current_user) %></li>
         <li><%= link_to "Logout", '/logout' %></li>
       <% else %>
         <li><%= link_to 'Login', '/login' %></li>
@@ -19,7 +19,7 @@
       <div id="myDropdown" class="dropdown-content no-display pos-absolute min-w-160 z-2 lg-1-all">
         <input class="font-s-16 padding-12-20 no-border" type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
         <% Genre.all.each do |genre| %>
-        <a class="color-black padding-12-15 no-text-dec block" href="/genres/<%= genre.id %>"><%= genre.name %></a>
+        <a class="color-black padding-12-15 no-text-dec block background-white" href="/genres/<%= genre.id %>"><%= genre.name %></a>
         <% end %>
       </div>
     </div>
