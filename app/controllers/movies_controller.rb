@@ -2,12 +2,10 @@ class MoviesController < ApplicationController
 
   def index
     @movies = Movie.all
-    # p "hello"
   end
 
   def new
     @movie = Movie.new
-    # p "hello"
   end
 
   def create
