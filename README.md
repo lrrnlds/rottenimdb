@@ -1,4 +1,7 @@
+
 # README
+
+This is RottenIMBD, combining the best of both the world of IMBD and RottenTomatoes.
 
 This README would normally document whatever steps are necessary to get the
 application up and running.
