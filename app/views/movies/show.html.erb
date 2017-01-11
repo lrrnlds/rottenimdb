@@ -1,49 +1,44 @@
 <div class="container-fluid padding-20-top max-w-1000">
   <div class="row">
-    <div class="col-sm-4 text-centered"><%= image_tag(@movie.poster, class: "img-responsive") %></div>
-    <div class="col-sm-6 ">
-      <h1>Title:  <%= @movie.title  %> </h1>
+    <div class="col-sm-6 text-centered"><%= image_tag(@movie.poster, class: "img-responsive") %></div>
+    <br>
+    <div class="col-sm-6 text-centered">
+      <h1><%= @movie.title  %> </h1>
       <p>Genre :  <%= @movie.genre  %> </p>
       <p>Year:  <%= @movie.year  %> </p>
       <p>Synopsis  <%= @movie.synopsis  %> </p>
     </div>
   </div>
-  <div class="col-sm-4 col-sm-offset-4">
-  <h2> Trusted Reviews </h2>
-  <% @movie.reviews.each do |review| %>
-  <p>
-  Title: <%= review.title  %><br>
-  Review: <%= review.body  %> <br>
-  Rating: <%= review.rating  %> <br>
-  
-  <div class="vote">Vote Count: <%= review.vote_count %> </div><br>
-    <form class="upvote" action="/reviews/<%= review.id %>/upvote" method="POST">
-      <input type="hidden" name="_method" value="PUT">
-      <input type="submit" class="upvote_button" value="👍 Upvote!">
-    </form>
-  </p>
-  <% if current_user %>
-    <%= link_to "Add a Comment!", new_comment_path %>
-  <% end %>
+  <div>
+    <div class="trustedreviews">
+      <h2> Trusted Reviews </h2>
+      <% @movie.reviews.each do |review| %>
+      <p>
+      Title: <%= review.title  %><br>
+      Review: <%= review.body  %> <br>
+      Rating: <%= review.rating  %> <br>
 
-  <% end %>
+      </p>
+
+      <% end %>
+    </div>
   </div>
 
-  
+<br>
+<br>
+  <div class="leavereview">
+    <% if current_user %>
+      <br>
+      <h3>Leave A Review: </h3>
 
-  <% if current_user %>
-    <h3>Leave A review: </h3>
+        <%= form_for :review, url: '/reviews' do |f| %>
+          <p>Title: <%= f.text_field :title, size: 30 %></p>
+          <p>Review: <%= f.text_area :body, :class => "span15" %></p>
+          <p>Rating: <%= f.select :rating, ['1', '2','3','4','5']%> </p>
+          <%= f.hidden_field :movie_id, :value => @movie.id %>
+          <%= f.submit "Submit" %>
+        <% end %>
 
-      <%= form_for :review, url: '/reviews' do |f| %>
-        <p>Title: <%= f.text_field :title %></p>
-        <p>Review: <%= f.text_area :body %></p>
-        <p>Rating: <%= f.select :rating, ['1', '2','3','4','5']%> </p>
-        <%= f.hidden_field :movie_id, :value => @movie.id %>
-        <%= f.submit "Submit" %>
       <% end %>
-
-    <% end %>
+  </div>
 </div>
-
-
-

@@ -13,6 +13,10 @@
  *= require_tree .
  *= require_self
  */
+
+.body{
+}
+
  .padding-15 {
    padding: 15px;
  }
@@ -75,20 +79,20 @@
 
  .font-s-16 {
    font-size: 16px;
+   font-family: 'Playfair Display', serif;
  }
 
  /* Color CSS */
 
  .color-black {
-   color: black;
+   color: white;
  }
 .tomatoes-background {
-  background-image: image-url("tomatoes.jpg");
   background-size: cover;
 }
 .pattern-background {
-  background-image: image-url("pattern.jpg");
   background-size: cover;
+  background-color: #0C5007;
 }
 
 .flip-y {
@@ -203,7 +207,8 @@
 }
 
 .navbar-default .navbar-nav>li>a {
-  color: black;
+  color: white;
+  text-align: justify;
 }
 
  /* Change color of dropdown links on hover */
@@ -211,3 +216,39 @@
 
  /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
  .show {display:block;}
+
+#user {
+  padding: 25px;
+}
+
+#pins {
+	padding-top: 1em;
+}
+
+div#pins figure img {
+	width: 100%; height: auto;
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 15px;
+	margin-bottom: 5px;
+}
+
+.b1{
+		border-radius: 5px;
+    display:inline-block;
+    position: relative;
+    margin: 5px;
+    float:left;
+    width: calc(33% - 10px);
+    height:600px;
+    background-color: #E9F5E8;
+}
+
+.leavereview {
+  display: block;
+  border: none;
+}
+
+.trustedreviews {
+  display: block;
+  border: none;
+}

@@ -1,21 +1,21 @@
 <nav class="navbar navbar-default margin-0 pattern-background">
   <div class="container-fluid">
     <ul class="nav navbar-nav navbar-left">
-      <li><%= link_to 'Home', '/' %></li>
-      <% if current_user %>
-        <li><%= link_to current_user.name, user_path(current_user) %></li>
-        <li><%= link_to "Logout", '/logout' %></li>
-      <% else %>
-        <li><%= link_to 'Login', '/login' %></li>
-        <li><%= link_to 'Signup', '/signup' %></li>
-      <% end %>
+      <li><%= link_to image_tag("rotten.png", size: "75x75", :alt => "Logo", :class => "css"), root_path %></li>
+        <% if current_user %>
+          <li><%= link_to current_user.name.capitalize, user_path(current_user) %></li>
+          <li><%= link_to "Logout", '/logout' %></li>
+        <% else %>
+          <li><%= link_to 'Login', '/login' %></li>
+          <li><%= link_to 'Signup', '/signup' %></li>
+        <% end %>
     </ul>
     <%= form_tag("/search", method: "get", class: "nav navbar-nav navbar-right") do %>
       <%= text_field(:search, :title, placeholder: 'Search for Movie', class: 'padding-15 no-border min-w-250' ) %>
       <%= submit_tag("Search", class: "padding-15 no-border color-black no-background") %>
     <% end %>
     <div class="dropdown pos-relative inline-block nav navbar-nav navbar-right">
-      <button onclick="showFunction()" class="dropbtn padding-15 no-border pointer-cursor color-black no-background">Genres</button>
+      <!-- <button onclick="showFunction()" class="dropbtn padding-15 no-border pointer-cursor color-black no-background">Genres</button> -->
       <div id="myDropdown" class="dropdown-content no-display pos-absolute min-w-160 z-2 lg-1-all">
         <input class="font-s-16 padding-12-20 no-border" type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
         <% Genre.all.each do |genre| %>
