@@ -1,9 +1,14 @@
 <div class="container-fluid text-center">
   <br>
-  <h2 class="margin-0 padding-bot-5">Our Latest Movies:</h2>
+  <h2 class="margin-25 padding-bot-25">Our Latest Movies:</h2>
   <br>
   <% @movies.last(21).each do |movie| %>
-    <div id="pins" class="b1"> <%=  link_to image_tag(movieposter(movie.id), size: "300x450", class: "img-responsive"), movie_path(movie)%><br><%= link_to movie.title, movie_path(movie) %> </div>
+    <div id="pins" class="b1">
+      <%= link_to movie.title, movie_path(movie) %>
+      <br><br>
+      <%=  link_to image_tag(movieposter(movie.id), size: "300x450", class: "img-responsive"), movie_path(movie)%>
+      <br>
+    </div>
   <% end %>
 </div>
 <%= render "layouts/footer" %>

@@ -7,4 +7,9 @@ module ApplicationHelper
     return @movie.poster
   end
  end
+
+ def reviewer_name(id)
+  @user = User.find(id)
+  return @user.name.capitalize
+ end
 end

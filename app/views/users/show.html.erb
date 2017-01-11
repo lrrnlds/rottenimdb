@@ -5,7 +5,7 @@
   <h2>Here are your reviews</h2>
 
     <% @user.reviews.each do |review|%>
-   <h4> <%= review.movie.title  %> </h5>
+   <h4> <%=link_to review.movie.title, movie_path(review.movie.id)  %> </h5>
      <p>Review: <%=  review.body %></p>
     <p><% review.comments.each do |comment| %></p>
     <p> Comment: <%= comment.body %> </p>

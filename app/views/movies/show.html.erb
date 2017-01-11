@@ -18,6 +18,7 @@
           Title: <%= review.title  %><br>
           Review: <%= review.body  %> <br>
           Rating: <%= review.rating  %> <br>
+          Reviewer: <%= link_to reviewer_name(review.user_id), user_path(review.user_id) %>
         </p>
         <% end %>
       <% else %>
@@ -34,8 +35,8 @@
       <h3>Leave A Review: </h3>
 
         <%= form_for :review, url: '/reviews' do |f| %>
-          <p>Title: <%= f.text_field :title, size: 30 %></p>
-          <p>Review: <%= f.text_area :body, :class => "span15" %></p>
+          <p>Title: <%= f.text_field :title, size: 64 %></p>
+          <p>Review: <br><%= f.text_area :body, :class => "span15", :size => 150 %></p>
           <p>Rating: <%= f.select :rating, ['1', '2','3','4','5']%> </p>
           <%= f.hidden_field :movie_id, :value => @movie.id %>
           <%= f.submit "Submit" %>

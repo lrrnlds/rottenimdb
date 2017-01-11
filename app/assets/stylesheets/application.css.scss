@@ -14,7 +14,8 @@
  *= require_self
  */
 
-.body{
+body {
+  font-family: 'Playfair Display', serif;
 }
 
  .padding-15 {
@@ -79,7 +80,6 @@
 
  .font-s-16 {
    font-size: 16px;
-   font-family: 'Playfair Display', serif;
  }
 
  /* Color CSS */
@@ -246,6 +246,11 @@ div#pins figure img {
 .leavereview {
   display: block;
   border: none;
+}
+
+.leavereview textarea {
+  width: 500px;
+  height: 100px;
 }
 
 .trustedreviews {
