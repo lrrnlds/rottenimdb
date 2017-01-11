@@ -1,27 +1,30 @@
+# [RottenIMBD](http://rottenimdb.herokuapp.com/)
 
-# README
+Everyone's a critic on RottenIMDB.  
 
-This is RottenIMBD, combining the best of both the world of IMBD and RottenTomatoes.
+![RottenIMDB App Snapshot](/public/rottenimdb.png)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Authored by
 
-Things you may want to cover:
+* Laura Reynolds ([@lrrnlds](http://github.com/lrrnlds))
 
-* Ruby version
 
-* System dependencies
+## MVP functionalities TBU
 
-* Configuration
+* Rails back-end API features
+  * receives GET requests for JSONs of requested resources
+    * builds customized results based on parsing of appropriate query strings
+  * receives POST requests for creation of resources in database
+  * cursory documentation
 
-* Database creation
+* Rails front-end web app features
+  * front page for displaying further information about HBot and engineering empathy
+  * initializes creation of resources in back-end API database from user input
+  * integrates data visualization from parsed data from back-end API
 
-* Database initialization
 
-* How to run the test suite
+## App Usage Flow TBU
 
-* Services (job queues, cache servers, search engines, etc.)
+* An employee is pinged on Slack to be notified of an upcoming Humanize session.
 
-* Deployment instructions
-
-* ...
+* An employee takes an anonymous survey (provided by HBot) before the Humanize session about their emotional/mental state regarding company dynamics.
