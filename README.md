@@ -9,9 +9,9 @@ Everyone's a critic on RottenIMDB.
 * Laura Reynolds ([@lrrnlds](http://github.com/lrrnlds))
 
 
-## MVP functionalities TBU
+## MVP functionalities
 
-* Rails back-end API features
+* Rails back-end features
   * receives GET requests for JSONs of requested resources
     * builds customized results based on parsing of appropriate query strings
   * receives POST requests for creation of resources in database
