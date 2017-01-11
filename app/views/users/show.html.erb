@@ -2,7 +2,6 @@
   <h1> <%=@user.name.capitalize%>'s profile: </h1>
   <br>
   <div>
-  <% if @user.trusted %>
   <h2>Here are your reviews</h2>
 
     <% @user.reviews.each do |review|%>
@@ -13,22 +12,5 @@
     <% end %>
     <% end %>
   </div>
-
-  <div>
-    <h2>Here are your comments</h2>
-    <% @user.comments.each do |comment|%>
-    <p><%=  comment.body %></p>
-    <% end %>
-    </div>
-
-    <%else%>
-
-  <div>
-    <h4>Here are your comments</h4>
-    <%  %>
-      <p><% @user.comments.each do |comment|%> </p>
-        <%= comment.body %>
-      <% end %>
-    <%end%>
   </div>
 </div>

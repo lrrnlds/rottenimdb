@@ -12,14 +12,16 @@
   <div>
     <div class="trustedreviews">
       <h2> Trusted Reviews </h2>
-      <% @movie.reviews.each do |review| %>
-      <p>
-      Title: <%= review.title  %><br>
-      Review: <%= review.body  %> <br>
-      Rating: <%= review.rating  %> <br>
-
-      </p>
-
+      <% if @movie.reviews.length > 0 %>
+        <% @movie.reviews.each do |review| %>
+        <p>
+          Title: <%= review.title  %><br>
+          Review: <%= review.body  %> <br>
+          Rating: <%= review.rating  %> <br>
+        </p>
+        <% end %>
+      <% else %>
+        <p>No reviews yet...</p>
       <% end %>
     </div>
   </div>
