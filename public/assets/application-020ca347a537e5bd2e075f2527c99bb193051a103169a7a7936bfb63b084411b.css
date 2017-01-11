@@ -1,0 +1,298 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+/* line 21, /Users/laurareynolds/Desktop/Personal_Projects/Personal_Client/client-project-challenge/app/assets/stylesheets/application.css.scss */
+.padding-15 {
+  padding: 15px;
+}
+
+/* line 24, /Users/laurareynolds/Desktop/Personal_Projects/Personal_Client/client-project-challenge/app/assets/stylesheets/application.css.scss */
+.padding-top-5 {
+  padding-top: 5px;
+}
+
+/* line 27, /Users/laurareynolds/Desktop/Personal_Projects/Personal_Client/client-project-challenge/app/assets/stylesheets/application.css.scss */
+.padding-bot-5 {
+  padding-bottom: 5px;
+}
+
+/* line 31, /Users/laurareynolds/Desktop/Personal_Projects/Personal_Client/client-project-challenge/app/assets/stylesheets/application.css.scss */
+.padding-12-15 {
+  padding: 12px 15px;
+}
+
+/* line 35, /Users/laurareynolds/Desktop/Personal_Projects/Personal_Client/client-project-challenge/app/assets/stylesheets/application.css.scss */
+.padding-12-20 {
+  padding: 12px 20px;
+}
+
+/* line 39, /Users/laurareynolds/Desktop/Personal_Projects/Personal_Client/client-project-challenge/app/assets/stylesheets/application.css.scss */
+.padding-20-top {
+  padding-top: 20px;
+}
+
+/* line 43, /Users/laurareynolds/Desktop/Personal_Projects/Personal_Client/client-project-challenge/app/assets/stylesheets/application.css.scss */
+.padding-20-bot {
+  padding-bottom: 20px;
+}
+
+/* line 47, /Users/laurareynolds/Desktop/Personal_Projects/Personal_Client/client-project-challenge/app/assets/stylesheets/application.css.scss */
+.margin-0 {
+  margin: 0px;
+}
+
+/* Border CSS */
+/* line 53, /Users/laurareynolds/Desktop/Personal_Projects/Personal_Client/client-project-challenge/app/assets/stylesheets/application.css.scss */
+.no-border {
+  border: none;
+}
+
+/* line 57, /Users/laurareynolds/Desktop/Personal_Projects/Personal_Client/client-project-challenge/app/assets/stylesheets/application.css.scss */
+.grey-1-right {
+  border-right: 1px solid grey;
+}
+
+/* line 61, /Users/laurareynolds/Desktop/Personal_Projects/Personal_Client/client-project-challenge/app/assets/stylesheets/application.css.scss */
+.grey-1-left {
+  border-left: 1px solid grey;
+}
+
+/* line 65, /Users/laurareynolds/Desktop/Personal_Projects/Personal_Client/client-project-challenge/app/assets/stylesheets/application.css.scss */
+.lg-1-all {
+  border: 1px solid #d3d3d3;
+}
+
+/* Cursor CSS */
+/* line 71, /Users/laurareynolds/Desktop/Personal_Projects/Personal_Client/client-project-challenge/app/assets/stylesheets/application.css.scss */
+.pointer-cursor {
+  cursor: pointer;
+}
+
+/* Text CSS */
+/* line 77, /Users/laurareynolds/Desktop/Personal_Projects/Personal_Client/client-project-challenge/app/assets/stylesheets/application.css.scss */
+.no-text-dec {
+  text-decoration: none;
+}
+
+/* line 81, /Users/laurareynolds/Desktop/Personal_Projects/Personal_Client/client-project-challenge/app/assets/stylesheets/application.css.scss */
+.font-s-16 {
+  font-size: 16px;
+  font-family: 'Playfair Display', serif;
+}
+
+/* Color CSS */
+/* line 88, /Users/laurareynolds/Desktop/Personal_Projects/Personal_Client/client-project-challenge/app/assets/stylesheets/application.css.scss */
+.color-black {
+  color: white;
+}
+
+/* line 91, /Users/laurareynolds/Desktop/Personal_Projects/Personal_Client/client-project-challenge/app/assets/stylesheets/application.css.scss */
+.tomatoes-background {
+  background-size: cover;
+}
+
+/* line 94, /Users/laurareynolds/Desktop/Personal_Projects/Personal_Client/client-project-challenge/app/assets/stylesheets/application.css.scss */
+.pattern-background {
+  background-size: cover;
+  background-color: #0C5007;
+}
+
+/* line 99, /Users/laurareynolds/Desktop/Personal_Projects/Personal_Client/client-project-challenge/app/assets/stylesheets/application.css.scss */
+.flip-y {
+  transform: scaleX(-1);
+}
+
+/* line 104, /Users/laurareynolds/Desktop/Personal_Projects/Personal_Client/client-project-challenge/app/assets/stylesheets/application.css.scss */
+.FF-background {
+  background-color: #FFCCB8;
+}
+
+/* line 108, /Users/laurareynolds/Desktop/Personal_Projects/Personal_Client/client-project-challenge/app/assets/stylesheets/application.css.scss */
+.F8-background {
+  background-color: #F8F8F8;
+}
+
+/* line 112, /Users/laurareynolds/Desktop/Personal_Projects/Personal_Client/client-project-challenge/app/assets/stylesheets/application.css.scss */
+.CC-background {
+  background-color: #CCF6AE;
+}
+
+/* line 115, /Users/laurareynolds/Desktop/Personal_Projects/Personal_Client/client-project-challenge/app/assets/stylesheets/application.css.scss */
+.background-white {
+  background-color: white;
+}
+
+/* line 119, /Users/laurareynolds/Desktop/Personal_Projects/Personal_Client/client-project-challenge/app/assets/stylesheets/application.css.scss */
+.background-777 {
+  background-color: #777;
+}
+
+/* line 123, /Users/laurareynolds/Desktop/Personal_Projects/Personal_Client/client-project-challenge/app/assets/stylesheets/application.css.scss */
+.no-background {
+  background-color: transparent;
+}
+
+/* line 127, /Users/laurareynolds/Desktop/Personal_Projects/Personal_Client/client-project-challenge/app/assets/stylesheets/application.css.scss */
+.color-777 {
+  color: #777;
+}
+
+/* Positioning CSS */
+/* line 133, /Users/laurareynolds/Desktop/Personal_Projects/Personal_Client/client-project-challenge/app/assets/stylesheets/application.css.scss */
+.pos-relative {
+  position: relative;
+}
+
+/* line 137, /Users/laurareynolds/Desktop/Personal_Projects/Personal_Client/client-project-challenge/app/assets/stylesheets/application.css.scss */
+.pos-absolute {
+  position: absolute;
+}
+
+/* Display CSS */
+/* line 143, /Users/laurareynolds/Desktop/Personal_Projects/Personal_Client/client-project-challenge/app/assets/stylesheets/application.css.scss */
+.block {
+  display: block;
+}
+
+/* line 147, /Users/laurareynolds/Desktop/Personal_Projects/Personal_Client/client-project-challenge/app/assets/stylesheets/application.css.scss */
+.inline-block {
+  display: inline-block;
+}
+
+/* line 151, /Users/laurareynolds/Desktop/Personal_Projects/Personal_Client/client-project-challenge/app/assets/stylesheets/application.css.scss */
+.no-display {
+  display: none;
+}
+
+/* line 155, /Users/laurareynolds/Desktop/Personal_Projects/Personal_Client/client-project-challenge/app/assets/stylesheets/application.css.scss */
+.no-float {
+  float: none;
+}
+
+/* Width CSS */
+/* line 161, /Users/laurareynolds/Desktop/Personal_Projects/Personal_Client/client-project-challenge/app/assets/stylesheets/application.css.scss */
+.min-w-160 {
+  min-width: 160px;
+}
+
+/* line 165, /Users/laurareynolds/Desktop/Personal_Projects/Personal_Client/client-project-challenge/app/assets/stylesheets/application.css.scss */
+.min-w-250 {
+  min-width: 250px;
+}
+
+/* line 169, /Users/laurareynolds/Desktop/Personal_Projects/Personal_Client/client-project-challenge/app/assets/stylesheets/application.css.scss */
+.max-w-1000 {
+  max-width: 1000px;
+}
+
+/* line 173, /Users/laurareynolds/Desktop/Personal_Projects/Personal_Client/client-project-challenge/app/assets/stylesheets/application.css.scss */
+.min-h-50 {
+  min-height: 50px;
+}
+
+/* Z-index */
+/* line 179, /Users/laurareynolds/Desktop/Personal_Projects/Personal_Client/client-project-challenge/app/assets/stylesheets/application.css.scss */
+.z-2 {
+  z-index: 2;
+}
+
+/* Misc. */
+/* line 185, /Users/laurareynolds/Desktop/Personal_Projects/Personal_Client/client-project-challenge/app/assets/stylesheets/application.css.scss */
+.img-responsive {
+  margin: 0 auto;
+}
+
+/* line 189, /Users/laurareynolds/Desktop/Personal_Projects/Personal_Client/client-project-challenge/app/assets/stylesheets/application.css.scss */
+.vcenter {
+  vertical-align: middle;
+}
+
+@media (max-width: 767px) {
+  /* line 194, /Users/laurareynolds/Desktop/Personal_Projects/Personal_Client/client-project-challenge/app/assets/stylesheets/application.css.scss */
+  .navbar-default {
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+  /* line 200, /Users/laurareynolds/Desktop/Personal_Projects/Personal_Client/client-project-challenge/app/assets/stylesheets/application.css.scss */
+  .navbar-mobile {
+    display: none;
+  }
+}
+/* line 206, /Users/laurareynolds/Desktop/Personal_Projects/Personal_Client/client-project-challenge/app/assets/stylesheets/application.css.scss */
+.transparent-green {
+  background: rgba(6, 41, 11, 0.5);
+}
+
+/* line 210, /Users/laurareynolds/Desktop/Personal_Projects/Personal_Client/client-project-challenge/app/assets/stylesheets/application.css.scss */
+.navbar-default .navbar-nav > li > a {
+  color: white;
+  text-align: justify;
+}
+
+/* Change color of dropdown links on hover */
+/* line 216, /Users/laurareynolds/Desktop/Personal_Projects/Personal_Client/client-project-challenge/app/assets/stylesheets/application.css.scss */
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+/* line 219, /Users/laurareynolds/Desktop/Personal_Projects/Personal_Client/client-project-challenge/app/assets/stylesheets/application.css.scss */
+.show {
+  display: block;
+}
+
+/* line 221, /Users/laurareynolds/Desktop/Personal_Projects/Personal_Client/client-project-challenge/app/assets/stylesheets/application.css.scss */
+#user {
+  padding: 25px;
+}
+
+/* line 225, /Users/laurareynolds/Desktop/Personal_Projects/Personal_Client/client-project-challenge/app/assets/stylesheets/application.css.scss */
+#pins {
+  padding-top: 1em;
+}
+
+/* line 229, /Users/laurareynolds/Desktop/Personal_Projects/Personal_Client/client-project-challenge/app/assets/stylesheets/application.css.scss */
+div#pins figure img {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 15px;
+  margin-bottom: 5px;
+}
+
+/* line 236, /Users/laurareynolds/Desktop/Personal_Projects/Personal_Client/client-project-challenge/app/assets/stylesheets/application.css.scss */
+.b1 {
+  border-radius: 5px;
+  display: inline-block;
+  position: relative;
+  margin: 5px;
+  float: left;
+  width: calc(33% - 10px);
+  height: 600px;
+  background-color: #E9F5E8;
+}
+
+/* line 247, /Users/laurareynolds/Desktop/Personal_Projects/Personal_Client/client-project-challenge/app/assets/stylesheets/application.css.scss */
+.leavereview {
+  display: block;
+  border: none;
+}
+
+/* line 252, /Users/laurareynolds/Desktop/Personal_Projects/Personal_Client/client-project-challenge/app/assets/stylesheets/application.css.scss */
+.trustedreviews {
+  display: block;
+  border: none;
+}
