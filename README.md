@@ -7,6 +7,10 @@ Everyone's a critic on RottenIMDB.  An alternative take on RottenTomatoes, users
 ## Authored by
 
 * Laura Reynolds ([@lrrnlds](http://github.com/lrrnlds))
+* Alexandria Nelson ([@Alex-CAN](http://github.com/Alex-CAN))
+* Alex McLeod ([@mcleodaj](http://github.com/mcleodaj))
+* Louie Chen ([@louiehchen](http://github.com/louiehchen))
+* Amrin Grewal ([@amrinder86](http://github.com/amrinder86))
 
 
 <!-- ## MVP functionalities
