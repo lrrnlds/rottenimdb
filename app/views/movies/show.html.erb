@@ -1,4 +1,4 @@
-<div class="container-fluid padding-20-top max-w-1000">
+<div class="container-fluid padding-20-top max-w-1000 movieshow">
   <div class="row">
     <div class="col-sm-6 text-centered"><%= image_tag(@movie.poster, class: "img-responsive") %></div>
     <br>
@@ -10,6 +10,7 @@
     </div>
   </div>
   <div>
+    <br>
     <div class="trustedreviews">
       <h2> Trusted Reviews </h2>
       <% if @movie.reviews.length > 0 %>
